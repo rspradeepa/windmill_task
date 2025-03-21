@@ -14,7 +14,7 @@ from PIL import Image
 from wmill import task
 
 # Configure Gemini API key
-genai.configure(api_key="AIzaSyA8XUKcWm3Acpd4TSN65X3XoowSRvmMr74")
+genai.configure(api_key="YOUR_API_KEY")
 
 
 def download_image_from_url(image_url: str):
