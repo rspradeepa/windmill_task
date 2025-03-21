@@ -1,0 +1,47 @@
+Floor Plan Analyzer Documentation
+
+#Overview:
+
+This project analyzes a floor plan image provided via a URL and extracts structured room data using Google Gemini API. The results are returned in both JSON and CSV formats.
+
+#Features:
+
+- Download and validate floor plan images from a URL.
+- Analyze floor plan images using Google's Gemini API.
+- Extract room names and estimated areas (in square meters).
+- Output structured JSON data and a downloadable CSV.
+- Windmill task-compatible for workflow automation.
+
+# Requirements:
+
+google-generativeai
+wmill
+pandas
+pillow
+requests
+Google Gemini API Key
+
+#Functions Breakdown:
+
+1. download_image_from_url(image_url: str)
+Download the image from the provided URL.
+Returns: bytes (image content)
+2. analyze_floor_plan_from_image_bytes(image_bytes: bytes)
+Sends the image to Gemini API and prompts it to extract room details.
+Returns: str (text response from the API)
+3. clean_json_text(raw_text: str)
+Cleans code block artifacts (e.g., ```json) from the AI response.
+Returns: str (cleaned text)
+4. extract_structured_data(response_text: str)
+Sends the initial response back to Gemini API for formatting.
+Parses the AI's response into structured JSON format.
+Returns: dict (with "rooms" key containing a list of rooms and areas)
+5. save_to_csv(data: dict)
+Converts the structured data into a CSV format using pandas.
+Returns: str (CSV data as a string)
+6. main(image_url: str)
+Downloads image
+Analyzes it
+Extracts structured data
+Generates CSV
+
