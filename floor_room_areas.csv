@@ -1,0 +1,8 @@
+room_name,area,thinking
+Kitchen,12.0,Calculated from dimensions 4.00 m x 3.00 m.
+Living Area,9.0,Calculated from dimensions 3.00 m x 3.00 m.
+Dining Area,8.0,Calculated by subtracting the kitchen and living room from the total presumed area of 5.00m x 4.00m.
+Bedroom 1,14.0,Calculated from dimensions 3.50 m x 4.00 m.
+Bedroom 2,12.0,Calculated from dimensions 3.00 m x 4.00 m.
+C.R.,3.0,Calculated from dimensions 1.50 m x 2.00 m.
+Porch,9.0,Calculated from dimensions 3.00 m x 3.00 m.
