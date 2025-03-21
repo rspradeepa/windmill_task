@@ -87,3 +87,6 @@ def main(image_url: str):
     csv_result = save_to_csv(structured_data)
 
     return {"structured_data": structured_data, "csv": csv_result}
+
+
+#Input Image URL: https://i.ibb.co/zV2Phyby/8fee8933aeb2.jpg
